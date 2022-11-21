@@ -199,3 +199,76 @@ main {
     height: 100%;
     border: none;
 }
+
+/* price */
+
+#prices {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+    max-width: 95%
+}
+
+.price-card {
+    position: relative;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 5px;
+    text-align: center;
+    width: 30%;
+}
+
+.special-ribbon {
+    --fold: 10px;
+    --arrow: 10px;
+
+    position: absolute;
+    inset: 29px calc(-1 * var(--fold)) auto auto;
+    padding: 0 10px var(--fold) calc(10px + var(--arrow));
+    clip-path: polygon(0 0,100% 0,100% calc(100% - var(--fold)),calc(100% - var(--fold)) 100%,
+                calc(100% - var(--fold)) calc(100% - var(--fold)),0 calc(100% - var(--fold)),
+                var(--arrow) calc(50% - var(--fold)/2));
+
+    background: var(--button-bg);
+    color: var(--button-text);
+    box-shadow: 0 calc(-1*var(--fold)) 0 inset #0005;
+}
+
+.card-title{
+    background-color: var(--header-bg);
+    padding: 10px 0;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.price-card h2 {
+    padding: 20px;
+}
+
+.price-card ul {
+    list-style: none;
+}
+
+.price-card .btn {
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    height: 30px;
+    font-size: 1rem;
+    font-weight: 800;
+    padding: 0 20px;
+    text-transform: uppercase;
+    margin: 15px;
+    border: none;
+}
+
+@media screen and (max-width: 400px) {
+    #prices {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .price-card {
+        width: 60%;
+    }
+}
