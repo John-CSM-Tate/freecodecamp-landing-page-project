@@ -245,6 +245,7 @@ main {
 
 .price-card h2 {
     padding: 20px;
+    height: 6rem;
 }
 
 .price-card ul {
