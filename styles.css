@@ -165,4 +165,8 @@ main {
     .container {
         width: 60%;
     }
+
+    .icon{
+        margin: 10px;
+    }
 }
