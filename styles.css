@@ -100,3 +100,36 @@ main {
     }
 }
 
+/* hero */
+
+#hero {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 150px;
+    text-align: center;
+}
+
+#hero h1 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+#hero input[type="email"]{
+    max-width: 300px;
+    width: 100%;
+    padding: 5px;
+    font-size: 1rem;
+}
+
+#hero input[type="submit"]{
+    color: var(--button-text);
+    background-color:var(--button-bg);
+    margin: 20px 0;
+    height: 35px;
+    border: 0;
+    width: 175px;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
