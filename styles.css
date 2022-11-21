@@ -129,7 +129,40 @@ main {
     margin: 20px 0;
     height: 35px;
     border: 0;
-    width: 175px;
+    width: 60%;
     font-size: 1.2rem;
     font-weight: 800;
+}
+
+/* Features */
+
+#features {
+    max-width: 700;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+}
+
+.icon {
+    color: var(--button-bg);
+    margin: 20px;
+}
+
+@media screen and (max-width: 400px) {
+    #features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        width: 60%;
+    }
 }
